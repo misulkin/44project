@@ -1,0 +1,279 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+#wrapper {
+    width: 100%;
+    background-color: rgb(119, 111, 121);
+    color: whitesmoke;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: tomato;
+    align-items: center;
+}
+.header__logo {
+    padding: 30px;
+    width: 180px;
+    height: auto;
+    min-width: 150px;
+}
+.header__logoimg {
+    width: 100%;
+    height: auto;
+
+}
+
+nav {
+   text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 5%;
+
+}
+.list__item {
+    padding: 20px 50px;
+    border-radius: 25px;
+    transition: background 0.4s 0.2s ease-in;
+    
+}
+.list__item:hover {
+    background-color: rgb(119, 111, 121);
+}
+
+.mainblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.textblock {
+   margin: 5%;
+}
+.imgblock {
+    width: 40%;
+    margin: 2%;
+    min-width: 300px;
+}
+.imgblock__img {
+    width: 100%;
+}
+h1 {
+    font-size: 42px;
+}
+.textblock__text {
+    padding: 15px 0;
+}
+.textblockadapt {
+    margin: 2.5%;
+}
+.musicwrapper {
+    width: 100%;
+    background: rgb(88, 109, 202);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.music__h2 {
+    text-align: center;
+    padding: 3%;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.musicbox {
+  
+}
+
+.music__track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+.music__track>p {
+    padding: 0 12px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase; 
+}
+.music__track:hover {
+    color: rgb(24, 23, 23);
+    background-color: whitesmoke;
+    font-size: 32px;
+    font-weight: 600;
+}
+.mail {
+    width: 100%;
+    background-color: rgb(77, 137, 139);
+}
+
+.mailwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8% ;
+    padding-top: 5%;
+}
+.mail__h2 {
+    font-size: 56px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin: 60px;
+}
+.mailform {
+    border: solid 3px whitesmoke;
+    padding: 30px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailinputs {
+    padding: 15px;
+}
+.mailinputs>p {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 250px;
+    font-size: 18px;
+    height: 50px;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 8px;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: rgb(150, 150, 150);
+    border: none;
+    color: white;
+    padding: 22px 48px;
+    text-decoration: none;
+    margin: 30px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 32px;
+}
+.footer {
+    width: 100%;
+    background-color: rgb(75, 59, 59);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer>p {
+    text-align: center;
+}
